@@ -1,0 +1,15 @@
+.main-image {
+ width: 100%;
+ /* border: 3px solid green;  */
+}
+
+.img-div{
+  width: 90%;
+  /* border: 3px solid red;  */
+}
+
+.logo-image {
+  position: absolute;
+  top: 10px;
+  left:10px;
+}

@@ -1,0 +1,66 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: 'Open Sans', sans-serif;
+  
+}
+.container {
+
+  display: flex;
+  height: 100vh;
+   /* border: 3px solid green; */
+}
+
+#image {
+flex: 1;
+display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 100%;
+  /* border-right: 3px solid grey;  */
+}
+
+
+#formPage{
+  flex: 2;
+  height: 100%;
+}
+
+.line-img {
+  opacity: 0.1;
+}
+
+@media only screen and (max-width: 800px) {
+  .container{
+    flex-direction: column;
+  }
+  #image {
+    flex:1;
+    margin-top: 60px;
+  }
+  #formPage {
+    flex:3
+  }
+  .line-img {
+     width: 1px;
+     height: 1px;
+     display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #formPage {
+    flex:1;
+    /* background: pink; */
+  }
+  #image{
+
+    margin-top: 60px;
+  }
+}
