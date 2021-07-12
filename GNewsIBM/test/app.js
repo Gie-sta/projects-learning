@@ -1,1 +1,0 @@
-// https://gnews.io/api/v4/search?q=cats&token=AIzaSyBf-mBYkmKoyfGEBInvrtMxeZuMQBQGiho
