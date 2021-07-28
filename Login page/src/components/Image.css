@@ -1,0 +1,13 @@
+.main-image {
+ width: 100%;
+}
+
+.img-div{
+  width: 90%;
+}
+
+.logo-image {
+  position: absolute;
+  top: 10px;
+  left:10px;
+}
