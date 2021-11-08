@@ -39,7 +39,7 @@ const PostPage = () => {
       <div className="card ">
         <div className="card-header">
           <h5> User id:{post.userId}</h5>
-          <div className='btn btn-secondary user-span'>Wiev user info</div>
+          <div className='btn btn-secondary user-span'>Hover to wiev user info</div>
           <ul className='user-info-container'>
             <li>Username: {user.username}</li>
             <li>name: {user.name}</li>
@@ -52,7 +52,7 @@ const PostPage = () => {
         <div className="card-body">
           <h3 className="card-title">{post.title}</h3>
           <p className="card-text">{post.body}</p>
-          <Link to='/' className="btn btn-secondary ">Go to all post</Link>
+          <Link to='/' className="btn btn-success ">Go to all post</Link>
         </div>
       </div>
     </div>

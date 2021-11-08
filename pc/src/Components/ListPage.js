@@ -10,7 +10,7 @@ const ListPage = ({ posts }) => {
   return (
     <div className='list-container'>
       <h1>All posts</h1>
-      <Link className='btn btn-secondary' to='/create'>Create new post</Link>
+      <Link className='btn btn-success' to='/create'>Create new post</Link>
       <div className="row post-container title">
         <div className='col-1 post-id'>Post ID</div>
         <h5 className='col-8 post-title'>Post title</h5>
@@ -25,7 +25,7 @@ const ListPage = ({ posts }) => {
             <h5 className='col-8 post-title'>{post.title}</h5>
             <p className='col-1 post-user-id'>user: {post.userId}</p>
             <Link
-              className='col-2 link-secondary'
+              className='col-2 link-success'
               to={`/post/${ post.id }`}
               state={{ id: post.id, userID: post.userId }} >
               Article details

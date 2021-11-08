@@ -67,7 +67,7 @@ const CreatePost = () => {
             className='form-control'>
           </textarea>
         </div>
-        <button type='submit' className='btn btn-primary'>Create new article</button>
+        <button type='submit' className='btn btn-success'>Create new post</button>
         <div>
           <Link to='/' className='btn btn-light link'>Go back</Link>
         </div>

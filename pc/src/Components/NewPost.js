@@ -18,8 +18,8 @@ const NewPost = () => {
         <div className="card-body">
           <h3 className="card-title">{post.title}</h3>
           <p className="card-text">{post.body}</p>
-          <Link to='/create' className="btn btn-secondary link">Create another postt</Link>
-          <Link to='/' className="btn btn-primary ">Go to all post</Link>
+          <Link to='/' className="btn btn-secondary link ">Go to all post</Link>
+          <Link to='/create' className="btn btn-success ">Create another post</Link>
 
         </div>
       </div>
