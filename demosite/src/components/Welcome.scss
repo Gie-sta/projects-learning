@@ -1,0 +1,81 @@
+@import "variables.scss";
+
+
+.welcome-container {
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 3rem;
+
+  .welcome-column{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: $primary-color;
+    color: white;
+
+    hr{
+      height: 8px;
+      width: 70px;
+      background-color: white;
+      margin: 1rem 0;
+    }
+    p{
+      font-weight: 100 ;
+    }
+    .button{
+      align-self: flex-end;
+    margin-top: auto;
+     border: 3px solid white;
+      color: white;
+      font-weight: 500;
+      padding: 0.5rem 2rem;
+    }
+
+  
+  }
+
+  .design-column {
+    height: fit-content;
+background-color: $grey;
+img{
+  width: 100%;
+  
+  object-fit: cover;
+}
+.design-text {
+  padding: 2rem;
+  h3{
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+}
+  }
+}
+
+
+@media(max-width: 576px) {
+  .welcome-container {
+      display: grid;
+    grid-template-columns: auto;
+   grid-gap: 1rem;
+
+   .welcome-column .button {
+      margin-top: 80px;
+     
+   }
+  }
+}
+
+@media (min-width: 576.1px) and (max-width: 992px)  {
+  .welcome-container {
+    grid-gap: 1rem;
+  }
+      }
+@media (min-width: 992.1px) and (max-width: 1366px)  {
+  .welcome-container {
+    grid-gap: 1.5rem;
+  }
+      }

@@ -1,0 +1,59 @@
+@import "variables.scss";
+
+.products-container {
+  margin: 2rem;
+  h4{
+    margin:0.8rem 0;
+  }
+
+  .offers-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap:2rem;
+
+    .banner {
+      grid-row: 1 / span 2;
+      .banner-img {
+        width:100%;
+      }
+    }
+
+    .best {
+      position: relative;
+      
+img{
+  width: 100%;
+}
+
+      h3{
+        width: 100%;
+        background-color: $grey;
+        position: absolute;
+        bottom: 4px;
+        padding: 4px 20px;
+        opacity: 0.7;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media(max-width: 576px) {
+  .products-container {
+    margin:0;
+    .offers-container {
+    
+      display: grid;
+      grid-template-columns: auto;
+      
+    }
+
+  }
+  
+}
+
+@media (min-width: 576.1px) and (max-width: 768px)  {
+  .products-container .offers-container {
+    grid-gap: 1rem;
+  }
+      }
