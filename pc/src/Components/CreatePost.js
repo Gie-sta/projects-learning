@@ -22,7 +22,9 @@ const CreatePost = () => {
         // const postedData = res.data;
         // console.log(postedData);
         setPost(res.data);
-        navigate("/new");
+        console.log(res.data);
+        navigate("/new/", { state: res.data });
+        // console.log(res.data)
 
       })
       .catch(err => console.log(err));
@@ -35,7 +37,7 @@ const CreatePost = () => {
 
   return (
     <div>
-      <form action="" >
+      <form action="" onSubmit={onSubmit}>
         <div>
           <label htmlFor="userId">User Id</label>
           <input
@@ -66,8 +68,12 @@ const CreatePost = () => {
             onChange={(e) => setBody(e.target.value)}>
           </textarea>
         </div>
-        <button type='submit' onSubmit={onSubmit}>Submit</button>
-        {/* <Link to='/new'>Submit</Link> */}
+        <button type='submit'>Submit</button>
+
+        {/* <Link to='/new'
+          state={{ state: post }}
+        >
+        </Link> */}
       </form>
 
       <div>
