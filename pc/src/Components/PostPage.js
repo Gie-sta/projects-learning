@@ -39,7 +39,7 @@ const PostPage = () => {
       <div className="card ">
         <div className="card-header">
           <h5> User id:{post.userId}</h5>
-          <div className='btn btn-secondary user-span'>Hover to wiev user info</div>
+          <div className='btn btn-secondary user-span'>Hover to view user info</div>
           <ul className='user-info-container'>
             <li>Username: {user.username}</li>
             <li>name: {user.name}</li>
