@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import ListPage from './ListPage';
 import PostPage from './PostPage';
 import NewPost from './NewPost';
@@ -10,7 +11,6 @@ const App = () => {
 
   const [posts, setPosts] = useState([]);
 
-
   useEffect(() => {
     const fetchData = async () => {
       const fetchedPosts = await jsonPlaceholder.get('/posts');
@@ -18,20 +18,15 @@ const App = () => {
     };
     fetchData();
   }, [setPosts])
-
   // console.log(posts)
-
-
 
   return (
     <BrowserRouter>
       <Routes>
-
         <Route path='/' element={<ListPage posts={posts} />} />
         <Route path='/post/:id' element={<PostPage />} />
         <Route path='/new' element={<NewPost />} />
         <Route path='/create' element={<CreatePost />} />
-
       </Routes>
     </BrowserRouter>
   )

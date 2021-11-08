@@ -1,0 +1,24 @@
+.list-container {
+  width: 60%;
+  margin: 20px auto;
+  h1{
+    margin:20px 0;
+  }
+ 
+   .post-container {
+     border-bottom: 1px solid lightgray;
+     margin-top: 0.5rem;
+     
+     &:hover{
+       background-color: rgb(253, 250, 250);
+     }
+   }
+   
+   .post-container.title {
+    font-weight: bold;
+    margin-top: 40px;
+    .post-title {
+      font-weight: bold;
+    }
+  }
+ }
