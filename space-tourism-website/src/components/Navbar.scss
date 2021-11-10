@@ -63,3 +63,26 @@ flex-grow: 0;
     }
   }
 }
+
+//tablet
+@media only screen and (min-width:481.1px) and (max-width: 768px) {
+  .navbar-container {
+    margin-top:0;
+    margin-left: 39px;
+
+    hr{
+     width: 0%;
+      display: none;
+    }
+
+    .nav-menu{
+width: 70%;
+padding: 0 48px;
+
+span{
+  display: none;
+}
+    }
+  }
+  
+}
