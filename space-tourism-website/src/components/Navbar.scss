@@ -1,11 +1,18 @@
 @import "../helpers/variables";
 
+// .navbar {
+//   padding-top: 40px;
+// }
 .navbar-container {
+  position: absolute;
+  top: 40px;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
-  margin-left: 55px;
+  // margin-top: 40px;
   height: 96px;
+  overflow: hidden;
+  padding-left: 55px;
  
 .logo-image{
   margin-top:24px;
@@ -20,7 +27,7 @@
     width: 34%;
     height: 1px;
     left:167px;
-    top: 88px;
+    top: 48px;
     background: #ffffff;
     mix-blend-mode: normal;
 opacity: 0.25;
@@ -62,13 +69,30 @@ flex-grow: 0;
       }
     }
   }
+  .hamburger {
+    display: none;
+  }
 }
 
-//tablet
-@media only screen and (min-width:481.1px) and (max-width: 768px) {
+//dekstop small
+@media only screen and  (max-width: 1200px) {
+ .navbar-container {
+   hr {
+     width: 30%;
+   }
+   .nav-menu {
+  padding: 0 50px;
+  }
+
+ }
+}
+
+//tablet big
+@media only screen and  (max-width: 1024px) {
+
   .navbar-container {
-    margin-top:0;
-    margin-left: 39px;
+    top:0;
+   padding-left: 39px;
 
     hr{
      width: 0%;
@@ -84,5 +108,60 @@ span{
 }
     }
   }
+}
+
+
+//tablet small
+@media only screen and (max-width: 768px) {
+
+  .navbar-container {
+    margin-top:0;
+   padding-left: 39px;
+
+    hr{
+     width: 0%;
+      display: none;
+    }
+
+    .nav-menu{
+width: 80%;
+padding: 0 24px;
+
+span{
+  display: none;
+}
+    }
+  }
   
 }
+
+//mobile
+@media only screen and (max-width:481px) {
+ 
+    .navbar-container {
+     padding-left: 24px;
+     
+      .logo-image{
+
+        width: 40px;
+        height: 40px;
+      }
+      hr{
+        width: 0%;
+         display: none;
+       }
+       .nav-menu {
+         display: none;
+       }   
+       .hamburger{
+         display: block;
+         width: 24px;
+         height: 21px;
+         margin-top: 33px;
+         margin-right: 24px;
+       }
+    }
+   
+  }
+
+

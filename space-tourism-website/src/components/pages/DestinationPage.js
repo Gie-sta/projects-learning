@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+
+import './DestinationPage.scss'
 
 const DestinationPage = () => {
   return (
-    <div>
+    <section className='destination-page-bacground'>
       Destination Page
-    </div>
+    </section>
   )
 }
 

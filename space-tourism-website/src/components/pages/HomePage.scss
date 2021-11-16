@@ -1,0 +1,174 @@
+@import "../../helpers/variables";
+
+.home-page-bacground {
+background: url(../../assets/home/background-home-desktop.jpg) no-repeat center center/ cover;
+width: 100vw;
+height: 100vh;
+display: grid;
+grid-template-columns: 1fr 1fr;
+padding-top: 387px;
+  
+  .home-header {
+    width: 450px;
+    margin-left: 165px;
+    h3{
+      text-transform: uppercase;
+      font-family: $font-middle;
+      font-size: 28px;
+      font-style: normal;
+  font-weight: 400;
+  color: $color-letter-blue;
+      letter-spacing: 4.725px;
+      line-height: 34px;
+    }
+    h1{
+      text-transform: uppercase;
+      font-family: $font-big;
+      color: #ffffff;
+      font-style: normal;
+  font-weight: normal;
+      font-size: 150px;
+      line-height: 172px;
+      margin:24px 0;
+    }
+    p{
+  font-family: $font-small;
+  font-style: normal;
+  font-weight: 400;
+  color: $color-letter-blue;
+  font-size: 18px;
+  line-height: 32px;
+    }
+  }
+  .explore {
+    color:black;
+    background-color: #ffffff;
+    width: 274px; 
+    height: 274px;
+    text-align: center;
+    text-transform: uppercase;
+  font-family: $font-big;
+  font-size: 32px;
+  line-height: 36.67pxpx;
+  padding-top: 119px;
+  // margin-left: 366px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+}
+
+
+
+//dekstop small
+@media only screen and  (max-width: 1200px) {
+  
+ }
+ 
+ //tablet big
+ @media only screen and  (max-width: 1024px) {
+  .home-page-bacground {
+    background: url(../../assets/home/background-home-tablet.jpg) no-repeat center center/ cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top:202px;
+  .home-header {
+    max-width: 450px;
+    margin: 0 auto;
+    h3{
+      font-size: 20px;
+      letter-spacing: 3.375px;
+      line-height: 24px;
+      text-align: center;
+    }
+    h1{
+      line-height: 150px;
+      margin:24px 0;
+    }
+    p{
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+    }
+  }
+  .explore{
+    width: 242px; 
+    height: 242px;
+  font-size: 32px;
+  line-height: 36.67px;
+  padding-top: 103px;
+}
+  }
+ }
+ 
+ 
+//  //tablet small
+//  @media only screen and (max-width: 768px) {
+//   .home-header {
+//     width: 450px;
+//     margin: 106px auto;
+//     h3{
+//       font-size: 20px;
+//       letter-spacing: 3.375px;
+//       line-height: 24px;
+//       text-align: center;
+//     }
+//     h1{
+//       line-height: 150px;
+//       margin:24px 0;
+//     }
+//     p{
+//   font-size: 16px;
+//   line-height: 28px;
+//   text-align: center;
+//     }
+//     .explore{
+//       display: block;
+//       color:black;
+//       background-color: #ffffff;
+//       width: 242px;
+//       height: 242px;
+//       text-align: center;
+//       text-transform: uppercase;
+//     font-family: $font-big;
+//     font-size: 32px;
+//     padding-top: 103px;
+//       border-radius: 50%;
+//       margin: 156px auto;
+//     }
+   
+//  }
+// }
+ 
+ //mobile
+ @media only screen and (max-width:481px) {
+  .home-page-bacground {
+    background: url(../../assets/home/background-home-mobile.jpg) no-repeat center center/ cover;
+    padding-top:112px;
+  .home-header {
+    width: 327px;
+    
+    h3{
+      font-size: 16px;
+      letter-spacing: 2.7px;
+      line-height: 19px;
+    }
+    h1{
+      line-height: 100px;
+      margin:16px 0;
+      font-size: 80px;
+      text-align: center;
+    }
+    p{
+  font-size: 15px;
+  line-height: 25px;
+    }
+  }
+  .explore{
+    width: 150px; 
+    height: 150px;
+  font-size: 20px;
+  line-height:23px;
+  padding-top: 68px;
+}
+  }
+   }

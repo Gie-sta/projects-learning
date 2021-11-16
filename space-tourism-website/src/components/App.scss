@@ -14,21 +14,24 @@ a {
   color: #ffffff;
 }
 
-body {
-  background: url(../assets/home/background-home-desktop.jpg) no-repeat center center/ cover;
-  height: 100vh;
-  color:#ffffff;
-}
+// .body-backround {
+//   background: url(../assets/home/background-home-desktop.jpg) no-repeat center center/ cover;
+//   height: 100vh;
+//   color:#ffffff;
+// }
 
-@media only screen and (max-width:480px) {
-  body {
-    background: url(../assets/home/background-home-mobile.jpg) no-repeat center center/ cover;
-    // height: 100vh;
-  }
-}
-@media only screen and (min-width:481.1px) and (max-width: 768px) {
-  body {
-    background: url(../assets/home/background-home-tablet.jpg) no-repeat center center/ cover;
-    // height: 100vh;
-  }
-}
+// //mobile
+// @media only screen and (max-width:480px) {
+//   .body-backround {
+//     // background: url(../assets/home/background-home-mobile.jpg) no-repeat center center/ cover;
+//     // height: 100vh;
+//   }
+// }
+
+// //tablet
+// @media only screen and (min-width:481.1px) and (max-width: 1024px) {
+//   .body-backround {
+//     // background: url(../assets/home/background-home-tablet.jpg) no-repeat center center/ cover;
+//     // height: 100vh;
+//   }
+// }
