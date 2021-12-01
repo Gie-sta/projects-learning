@@ -1,9 +1,9 @@
-@import "../../helpers/variables";
+@import "../../../helpers/variables";
 
 .home-page-bacground {
-background: url(../../assets/home/background-home-desktop.jpg) no-repeat center center/ cover;
+background: url(../../../assets/home/background-home-desktop.jpg) no-repeat center center/ cover;
 width: 100vw;
-height: 100vh;
+min-height: 100vh;
 display: grid;
 grid-template-columns: 1fr 1fr;
 padding-top: 387px;
@@ -60,14 +60,14 @@ padding-top: 387px;
 
 
 //dekstop small
-@media only screen and  (max-width: 1200px) {
+// @media only screen and  (max-width: 1200px) {
   
- }
+//  }
  
  //tablet big
  @media only screen and  (max-width: 1024px) {
   .home-page-bacground {
-    background: url(../../assets/home/background-home-tablet.jpg) no-repeat center center/ cover;
+    background: url(../../../assets/home/background-home-tablet.jpg) no-repeat center center/ cover;
     display: grid;
     grid-template-columns: 1fr;
     padding-top:202px;
@@ -101,48 +101,48 @@ padding-top: 387px;
  }
  
  
-//  //tablet small
-//  @media only screen and (max-width: 768px) {
-//   .home-header {
-//     width: 450px;
-//     margin: 106px auto;
-//     h3{
-//       font-size: 20px;
-//       letter-spacing: 3.375px;
-//       line-height: 24px;
-//       text-align: center;
-//     }
-//     h1{
-//       line-height: 150px;
-//       margin:24px 0;
-//     }
-//     p{
-//   font-size: 16px;
-//   line-height: 28px;
-//   text-align: center;
-//     }
-//     .explore{
-//       display: block;
-//       color:black;
-//       background-color: #ffffff;
-//       width: 242px;
-//       height: 242px;
-//       text-align: center;
-//       text-transform: uppercase;
-//     font-family: $font-big;
-//     font-size: 32px;
-//     padding-top: 103px;
-//       border-radius: 50%;
-//       margin: 156px auto;
-//     }
+ //tablet small
+ @media only screen and (max-width: 768px) {
+  .home-header {
+    width: 450px;
+    margin: 106px auto;
+    h3{
+      font-size: 20px;
+      letter-spacing: 3.375px;
+      line-height: 24px;
+      text-align: center;
+    }
+    h1{
+      line-height: 150px;
+      margin:24px 0;
+    }
+    p{
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+    }
+    .explore{
+      display: block;
+      color:black;
+      background-color: #ffffff;
+      width: 242px;
+      height: 242px;
+      text-align: center;
+      text-transform: uppercase;
+    font-family: $font-big;
+    font-size: 32px;
+    padding-top: 103px;
+      border-radius: 50%;
+      margin: 156px auto;
+    }
    
-//  }
-// }
+ }
+}
  
  //mobile
  @media only screen and (max-width:481px) {
   .home-page-bacground {
-    background: url(../../assets/home/background-home-mobile.jpg) no-repeat center center/ cover;
+    background: url(../../../assets/home/background-home-mobile.jpg) no-repeat center center/ cover;
     padding-top:112px;
   .home-header {
     width: 327px;

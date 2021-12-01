@@ -1,13 +1,13 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Navbar from './Navbar';
-import MobileMenu from './MobileMenu';
-import HomePage from './pages/HomePage';
-import CrewPage from './pages/CrewPage';
-import DestinationPage from './pages/DestinationPage';
-import TechnologyPage from './pages/TechnologyPage';
+import Navbar from './Navigation/NavBar/Navbar';
+import MobileMenu from './Navigation/MobileMenu/MobileMenu';
+import HomePage from './pages/HomePage/HomePage';
+import CrewPage from './pages/CrewPage/CrewPage';
+import DestinationPage from './pages/DestinationPage/DestinationPage';
+import TechnologyPage from './pages/TechnologyPage/TechnologyPage';
 // import history from '../history';
-import { useDispatch, useSelector } from "react-redux";
+// import { useDispatch, useSelector } from "react-redux";
 
 import './App.scss';
 
@@ -39,8 +39,8 @@ const App = () => {
 
 
 
-  const bacgroundImg = useSelector((state) => state.backgroundReducer.background);
-  console.log(bacgroundImg);
+  // const bacgroundImg = useSelector((state) => state.backgroundReducer.background);
+  // console.log(bacgroundImg);
   // const defineBackgroundStyle = (backgroundImg) => {
   //   console.log(bacgroundImg);
   //   if (backgroundImg === "destination") {

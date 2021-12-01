@@ -1,10 +1,13 @@
 import { combineReducers } from "redux";
 import { mobileMenu } from "./mobileMenu";
-import { backgroundReducer } from "./backgroundReducer";
+import { destinationReducer } from './destinationReducer';
+import { crewReducer } from './crewReducer';
+import { technologyReducer } from "./technologyReducer";
 
 
 export const rootReducer = combineReducers({
   mobileMenu,
-  backgroundReducer
-
+  destinationReducer,
+  crewReducer,
+  technologyReducer
 });

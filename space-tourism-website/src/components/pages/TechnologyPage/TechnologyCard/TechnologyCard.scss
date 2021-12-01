@@ -1,0 +1,42 @@
+@import "../../../../helpers/variables";
+
+.technology-card-container{
+  display: grid;
+  // grid-template-columns: 600px 515px;
+  grid-template-columns: 37.5em 32.19em;
+  grid-template-columns: 1.076fr 0.924fr;
+  .technology-describtion-container{
+    margin-right: 156px;
+    margin-top: 137px;
+    
+    h5{
+      font-family: $font-middle;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+      color: $color-letter-blue;
+      text-transform: uppercase;
+    }
+    .technology-header{
+      font-family: $font-big;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 56px;
+      line-height: 64px;
+      margin-top: 11px;
+      text-transform: uppercase;
+    }
+    .technology-text{
+      font-family: $font-small;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 32px;
+      color: $color-letter-blue;
+
+    }
+
+  }
+}

@@ -16,3 +16,26 @@ export const defineBodyBackground = (background) => {
     payload: background
   }
 }
+
+//destination 
+export const destinationPick = (destination) => {
+  return ({
+    type: 'DESTINATION_PICK',
+    payload: destination
+  })
+}
+
+//crew 
+export const crewPick = (crew) => {
+  return ({
+    type: 'CREW_PICK',
+    payload: crew
+  })
+}
+//technology 
+export const technologyPick = (technology) => {
+  return ({
+    type: 'TECHNOLOGY_PICK',
+    payload: technology
+  })
+}
