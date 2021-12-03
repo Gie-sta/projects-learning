@@ -1,1 +1,59 @@
 @import "../../../../helpers/variables";
+
+.crew-card-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 100%;
+  
+
+  .crew-card-describtion{
+    padding-left: 165.5px;
+
+    .crew-role-header{
+      margin-top: 154px;
+      margin-bottom: 15px;
+      font-family: $font-big;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 37px;
+      text-transform: uppercase;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+
+    }
+    .crew-name-header{
+      margin-bottom: 27px;
+      font-family: $font-big;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 56px;
+      line-height: 64px;
+      text-transform: uppercase;
+    }
+    .crew-card-tex{
+      width: 444px;
+
+      font-family: $font-small;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 32px;
+      color: #D0D6F9;
+    }
+  }
+  .crew-img-container{
+    position: relative;
+    .crew-img{
+  position:absolute;
+  bottom: 0;
+  right: 30%;
+  justify-content: center;
+ 
+      // height: 100%;
+    }
+
+  }
+
+
+}

@@ -24,12 +24,15 @@ const CrewCard = ({ crew }) => {
 
   return (
     <div className='crew-card-container'>
-      <div>
+      <div className='crew-card-describtion'>
         <h3 className='crew-role-header'>{crew.role}</h3>
         <h2 className='crew-name-header'>{crew.name}</h2>
-        <p className='crew-bio-text'>{crew.bio}</p>
+        <p className='crew-card-tex'>{crew.bio}</p>
       </div>
-      <img src={showImage(crew)} alt={crew.name} className='crew-img' />
+      <div className='crew-img-container'>
+
+        <img src={showImage(crew)} alt={crew.name} className='crew-img' />
+      </div>
     </div>
   )
 }

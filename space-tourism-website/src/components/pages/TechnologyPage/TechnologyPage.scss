@@ -20,7 +20,7 @@
       font-weight: bold;
       mix-blend-mode: normal;
       opacity: 0.25;
-      padding-right: 28px;
+      padding-right: 24px;
     }
   }
 
@@ -34,11 +34,12 @@
     // display: flex-column;
     
     margin-top: 105px;
+  
    
     .technology-li{
     
-      border: solid 1px #ffffff;
-        opacity: 0.25;
+      border: solid 1px rgba(255,255,255, 0.25);
+        // opacity: 0.25;
         border-radius: 50%;
         width: 80px;
         margin: 32px 80px 32px 165px;
@@ -52,6 +53,10 @@
         padding: 22px 0;
         color: #ffffff;
 
+        &:hover{
+          border: solid 1px #ffffff;
+          cursor: pointer;
+        }
     }
     .li-active{
      
@@ -70,3 +75,98 @@
  
   }
   }
+
+//dekstop small
+@media only screen and  (max-width: 1300px) {
+  .technology-page-bacground {
+    .technology-container{
+      grid-template-columns: 0.25fr 1.75fr;
+      .technology-nav-container {
+        .technology-li {
+          margin: 32px 50px 32px 125px;
+        }
+      }
+    }
+  }
+ }
+
+
+  //tablet big
+ @media only screen and (max-width: 1024px) {
+.technology-page-bacground{
+  background: url(../../../assets/technology/background-technology-tablet.jpg)  center center/ cover no-repeat;
+
+  .page-header{
+    padding-top: 136px;
+    padding-left: 38.5px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    margin-bottom: 60px;
+    span {
+      padding-right: 16px;
+    }
+  }
+
+  .technology-container{
+    grid-template-columns: 1fr;
+    position: relative;
+
+.technology-nav-container {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top:45.52%;
+
+.technology-li{
+    width: 60px;
+    margin: 0px 16px 0 0 ;
+    font-size: 24px;
+    line-height: 27.5px;
+    letter-spacing: 1.5px;
+    padding: 16px 0;  
+}
+}
+ }
+}
+ }
+
+ //mobile
+ @media only screen and (max-width:481px) {
+  .technology-page-bacground{
+   
+    .page-header{
+      padding-top: 88px;
+      padding-left: 0px;
+      text-align: center;
+    
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+      margin-bottom: 32px;
+    }
+  
+    .technology-container{
+     
+  
+  .technology-nav-container {
+    
+    // margin-top:45.52%;
+  
+  .technology-li{
+      width: 40px;
+     
+      font-size: 16px;
+      line-height: 18.34px;
+      letter-spacing: 1px;
+      padding: 11px 0;  
+  }
+  }
+   }
+  }
+ }

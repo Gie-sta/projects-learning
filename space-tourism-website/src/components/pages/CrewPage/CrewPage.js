@@ -47,35 +47,34 @@ const CrewPage = () => {
   return (
     <section className='crew-page-bacground'>
       <h3 className='page-header'>
-        <span>02</span>pick your destination
+        <span>02</span>meet your crew
       </h3>
       <div className='crew-container'>
-        <div >
-          <CrewCard
-            crew={crewNav}
-          />
-        </div>
-        <div className='crew-nav-container'>
 
-          <ul className='crew-nav'>
-            <li
-              onClick={() => selectCrew(data.crew[0])}
-              className={showActiveMoon()}
-            >1</li>
-            <li
-              onClick={() => selectCrew(data.crew[1])}
-              className={showActiveMars()}
-            >2</li>
-            <li
-              onClick={() => selectCrew(data.crew[2])}
-              className={showActiveEuropa()}
-            >3</li>
-            <li
-              onClick={() => selectCrew(data.crew[3])}
-              className={showActiveTitan()}
-            >4</li>
-          </ul>
-        </div>
+        <CrewCard
+          crew={crewNav} />
+
+        {/* <div className='crew-nav-container'> */}
+
+        <ul className='crew-nav'>
+          <li
+            onClick={() => selectCrew(data.crew[0])}
+            className={showActiveMoon()}
+          ></li>
+          <li
+            onClick={() => selectCrew(data.crew[1])}
+            className={showActiveMars()}
+          ></li>
+          <li
+            onClick={() => selectCrew(data.crew[2])}
+            className={showActiveEuropa()}
+          ></li>
+          <li
+            onClick={() => selectCrew(data.crew[3])}
+            className={showActiveTitan()}
+          ></li>
+        </ul>
+        {/* </div> */}
 
       </div>
 
