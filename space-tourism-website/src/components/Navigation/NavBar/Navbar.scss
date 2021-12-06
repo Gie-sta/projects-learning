@@ -24,7 +24,7 @@
 
   hr{
     position: absolute;
-    width: 34%;
+    width: 32.85%;
     height: 1px;
     left:167px;
     top: 48px;
@@ -45,8 +45,8 @@ flex-grow: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
-    padding: 0 123px;
+    width: 59.93%;
+    padding: 0 165px 0 123px;
     background-color: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(81.5485px);
     flex-grow: 0;
@@ -56,12 +56,16 @@ flex-grow: 0;
      
       .nav-menu-item-link{
         font-family: $font-middle;
+        font-style: normal;
+        font-weight: normal;
         text-transform: uppercase;
-        font-size: 1em;
-        letter-spacing: 0.17em;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
         padding-bottom: 38px;
         span {
           font-weight: bold;
+          margin-right: 11px;
         }
         &:hover {
           border-bottom:solid 1px #ffffff;
@@ -75,7 +79,7 @@ flex-grow: 0;
 }
 
 //dekstop small
-@media only screen and  (max-width: 1200px) {
+@media only screen and  (max-width: 1300px) {
  .navbar-container {
    hr {
      width: 30%;
@@ -87,11 +91,12 @@ flex-grow: 0;
  }
 }
 
-//tablet big
-@media only screen and  (max-width: 1024px) {
+
+//tablet
+@media only screen and (max-width: 1024px) {
 
   .navbar-container {
-    top:0;
+   top:0;
    padding-left: 39px;
 
     hr{
@@ -100,40 +105,39 @@ flex-grow: 0;
     }
 
     .nav-menu{
-width: 70%;
-padding: 0 48px;
+      width: 61.73%;
+      padding: 0 46px 0 48px;
 
-span{
-  display: none;
-}
+.nav-menu-item{
+
+  .nav-menu-item-link{
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+  
+    span{
+      display: none;
     }
   }
-}
-
-
-//tablet small
-@media only screen and (max-width: 768px) {
-
-  .navbar-container {
-    margin-top:0;
-   padding-left: 39px;
-
-    hr{
-     width: 0%;
-      display: none;
-    }
-
-    .nav-menu{
-width: 80%;
-padding: 0 24px;
-
-span{
-  display: none;
 }
     }
   }
   
 }
+
+
+//small tablet
+@media only screen and (max-width: 650px) {
+
+  .navbar-container {
+    .nav-menu{
+      width: 70%;
+      padding: 0 20px 0 20px;
+    }
+  }
+}
+
+
 
 //mobile
 @media only screen and (max-width:481px) {
@@ -142,14 +146,10 @@ span{
      padding-left: 24px;
      
       .logo-image{
-
         width: 40px;
         height: 40px;
       }
-      hr{
-        width: 0%;
-         display: none;
-       }
+  
        .nav-menu {
          display: none;
        }   
@@ -160,8 +160,7 @@ span{
          margin-top: 33px;
          margin-right: 24px;
        }
-    }
-   
+    } 
   }
 
 

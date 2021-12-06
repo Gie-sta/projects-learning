@@ -42,24 +42,24 @@ const Navbar = () => {
         <li className='nav-menu-item'>
           <NavLink className='nav-menu-item-link' activestyle="active" to='/'
 
-          ><span>00</span>  Home</NavLink>
+          ><span>00</span>Home</NavLink>
         </li>
         <li className='nav-menu-item'>
           <NavLink className='nav-menu-item-link' activestyle="active" to='/destination'
             onClick={() => selectDestination(data.destinations[0])}
 
-          ><span>01</span>  destination</NavLink>
+          ><span>01</span>destination</NavLink>
         </li>
         <li className='nav-menu-item'>
           <NavLink className='nav-menu-item-link' activestyle="active" to='/crew'
             onClick={() => selectCrew(data.crew[0])}
 
-          ><span>02</span>  crew</NavLink>
+          ><span>02</span>crew</NavLink>
         </li>
         <li className='nav-menu-item'>
           <NavLink className='nav-menu-item-link' activestyle="active" to='/technology'
             onClick={() => selectTechnology(data.technology[0])}
-          ><span>03</span>  technology</NavLink>
+          ><span>03</span>technology</NavLink>
         </li>
 
       </ul>
