@@ -9,13 +9,6 @@ export const hideMobileMenu = () => {
   })
 }
 
-//bacground color
-export const defineBodyBackground = (background) => {
-  return {
-    type: "DEFINE_BODY_BACKGROUND",
-    payload: background
-  }
-}
 
 //destination 
 export const destinationPick = (destination) => {

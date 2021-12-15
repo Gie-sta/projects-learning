@@ -37,22 +37,22 @@ const MobileMenu = () => {
         </div>
         <ul className="mobile-menu-items">
           <li className='mobile-menu-item'>
-            <Link className='mobile-menu-link' to='/' onClick={() => handleClick()}><span>00 </span>Home</Link>
+            <Link className='mobile-menu-link' to='/' activestyle="active" onClick={() => handleClick()}><span>00</span>Home</Link>
           </li>
           <li className='mobile-menu-item'>
-            <Link className='mobile-menu-link' to='/destination'
+            <Link className='mobile-menu-link' to='/destination' activestyle="active"
               onClick={() => { handleClick(); selectDestination(data.destinations[0]) }}
-            ><span>01 </span>destination</Link>
+            ><span>01</span>destination</Link>
           </li>
           <li className='mobile-menu-item'>
-            <Link className='mobile-menu-link' to='/crew'
+            <Link className='mobile-menu-link' to='/crew' activestyle="active"
               onClick={() => { handleClick(); selectCrew(data.crew[0]) }}
-            ><span>02 </span>crew</Link>
+            ><span>02</span>crew</Link>
           </li>
           <li className='mobile-menu-item'>
-            <Link className='mobile-menu-link' to='/technology'
+            <Link className='mobile-menu-link' to='/technology' activestyle="active"
               onClick={() => { handleClick(); selectTechnology(data.technology[0]) }}
-            ><span>03 </span>Technology</Link>
+            ><span>03</span>Technology</Link>
           </li>
         </ul>
 

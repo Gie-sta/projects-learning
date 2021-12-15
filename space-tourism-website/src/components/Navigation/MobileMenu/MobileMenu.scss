@@ -27,6 +27,7 @@ justify-content: flex-end;
   
     .cancel-mobile-menu{
       margin-top: 34px;
+      padding-bottom: 32px;
       margin-right: 27px;
       text-align: right;
       .cancel-sign {
@@ -39,21 +40,25 @@ justify-content: flex-end;
     .mobile-menu-items{
       margin-left: 32px;
       .mobile-menu-item{
-       margin-top: 32px;
+       padding-top: 32px;
        &:hover {
-        border-right:solid 3px #ffffff;
+
+        border-right:solid 4px #ffffff;
+        
       }
        .mobile-menu-link{
         font-family: $font-middle;
         text-transform: uppercase;
-        font-size: 1em;
-        letter-spacing: 0.17em;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
         padding-bottom: 38px;
         .active {
           border-bottom:solid 3px #ffffff;
         } 
         span {
           font-weight: bold;
+          padding-right: 11px;
         }
         
        }

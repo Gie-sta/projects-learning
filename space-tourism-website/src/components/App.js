@@ -2,67 +2,19 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Navigation/NavBar/Navbar';
 import MobileMenu from './Navigation/MobileMenu/MobileMenu';
-import HomePage from './pages/HomePage/HomePage';
-import CrewPage from './pages/CrewPage/CrewPage';
-import DestinationPage from './pages/DestinationPage/DestinationPage';
-import TechnologyPage from './pages/TechnologyPage/TechnologyPage';
-// import history from '../history';
-// import { useDispatch, useSelector } from "react-redux";
+import HomePage from './pages/HomePage';
+import CrewPage from './pages/CrewPage';
+import DestinationPage from './pages/DestinationPage';
+import TechnologyPage from './pages/TechnologyPage';
 
 import './App.scss';
 
 const App = () => {
 
 
-
-  // .body-backround {
-  //   background: url(../assets/home/background-home-desktop.jpg) no-repeat center center/ cover;
-  //   height: 100vh;
-  //   color:#ffffff;
-  // }
-
-  // //mobile
-  // @media only screen and (max-width:480px) {
-  //   .body-backround {
-  //     background: url(../assets/home/background-home-mobile.jpg) no-repeat center center/ cover;
-  //     // height: 100vh;
-  //   }
-  // }
-
-  // //tablet
-  // @media only screen and (min-width:481.1px) and (max-width: 1024px) {
-  //   .body-backround {
-  //     background: url(../assets/home/background-home-tablet.jpg) no-repeat center center/ cover;
-  //     // height: 100vh;
-  //   }
-  // }
-
-
-
-  // const bacgroundImg = useSelector((state) => state.backgroundReducer.background);
-  // console.log(bacgroundImg);
-  // const defineBackgroundStyle = (backgroundImg) => {
-  //   console.log(bacgroundImg);
-  //   if (backgroundImg === "destination") {
-  //     console.log(`bacground is ${ bacgroundImg }`)
-  //     // return `background: url(../assets/destination/background-destination-desktop.jpg) no-repeat center center/ cover`
-  //   } else {
-  //     if (backgroundImg === undefined) {
-  //       // return `url(../assets/destination/background-home-desktop.jpg) no-repeat center center/ cover`
-  //       console.log(`bacground is  ${ bacgroundImg }`)
-
-  //     }
-  //   }
-  // }
-
-
   return (
-    // style={{ background: url(../ assets / destination / background - home - desktop.jpg) }}
-
-
     <BrowserRouter>
       <div className='body-backround'>
-        {/* <Router history={history}> */}
         <Navbar />
         <MobileMenu />
         <Routes>
