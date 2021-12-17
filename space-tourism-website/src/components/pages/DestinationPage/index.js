@@ -13,8 +13,6 @@ import styles from "./styles.module.scss";
 
 const DestinationPage = () => {
 
-
-
   const destinationState = useSelector((state) => state.destinationReducer.destination);
 
   const dispatch = useDispatch();
@@ -23,7 +21,6 @@ const DestinationPage = () => {
   const selectDestination = (destination) => {
     dispatch(destinationPick(destination));
   }
-
   const destination = destinationState ? destinationState : data.destinations[0];
 
   //show active destination

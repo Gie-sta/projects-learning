@@ -2,7 +2,6 @@ import React from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 
-
 import { crewPick } from '../../../store/actions';
 import data from '../../../helpers/data';
 
@@ -13,18 +12,18 @@ import imageAnousheh from '../../../assets/crew/image-anousheh-ansari.webp';
 
 import styles from "./styles.module.scss";
 
-
 const CrewPage = () => {
 
   const crewState = useSelector((state) => state.crewReducer.crew);
 
   const dispatch = useDispatch();
+  //select crew
   const selectCrew = (crew) => {
     dispatch(crewPick(crew));
   }
 
   const crew = crewState ? crewState : data.crew[0];
-  console.log(crew)
+
 
   //show image
   const showImage = (crew) => {
@@ -101,7 +100,6 @@ const CrewPage = () => {
                 {/* <p className={`crew-card-tex ${ bioWidth(crew) }`}>{crew.bio}</p> */}
               </div>
             </CSSTransition>
-
           </SwitchTransition>
           <ul className={styles.nav}>
             <li
@@ -122,7 +120,6 @@ const CrewPage = () => {
             ></li>
           </ul>
         </div>
-
         <div className={styles.image}>
           <SwitchTransition mode="out-in">
             <CSSTransition
@@ -136,21 +133,11 @@ const CrewPage = () => {
                 exitActive: styles['fade-enterexit-active'],
               }}
             >
-
-
               <img src={showImage(crew)} alt={crew.name} className='crew-img' />
-
             </CSSTransition>
-
           </SwitchTransition>
-
         </div>
-
-        {/* </div> */}
-
       </div>
-
-
     </section >
   )
 }

@@ -38,23 +38,20 @@
     
       .fade-enter{
         opacity: 0;   
-     }
-     .fade-exit{
+      }
+      .fade-exit{
         opacity: 1;
-     }
-     .fade-enter-active{
-        opacity: 1;
-        
-     }
-     .fade-exit-active{
+      }
+      .fade-enter-active{
+        opacity: 1; 
+      }
+      .fade-exit-active{
         opacity: 0;
-     }
-     .fade-enter-active,
-     .fade-exit-active{
+      }
+      .fade-enter-active,
+      .fade-exit-active{
         transition: opacity 2500ms;
-     }
-    
-      
+      }
     }
 
     .info{
@@ -88,8 +85,8 @@
           border-bottom: 3px solid #ffffff;
           &:hover {
             border-bottom: 3px solid #ffffff;
+          }
         }
-      }
       }
 
       .describtion {
@@ -323,18 +320,18 @@
             max-width:327px;
             margin-bottom: 58px;
             margin-top:32px;
-        h5{
-          margin-top:0;
-        }
+            h5{
+              margin-top:0;
+            }
             .distance{
               margin:0 auto;
-             }
-             .travel_time{
+            }
+            .travel_time{
               margin:0 auto;
-             }
+            }
           }
         }
       }
     }
- }
+  }
 }

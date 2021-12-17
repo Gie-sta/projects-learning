@@ -3,28 +3,30 @@ import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
 import { hideMobileMenu, destinationPick, crewPick, technologyPick } from "../../../store/actions";
+
 import close from '../../../assets/shared/icon-close.svg';
-import data from '../../../helpers/data'
+import data from '../../../helpers/data';
+
 import './MobileMenu.scss'
 
 const MobileMenu = () => {
 
   const mobileMenu = useSelector((state) => state.mobileMenu)
-  console.log(mobileMenu);
-  const dispatch = useDispatch();
 
+  const dispatch = useDispatch();
+  //hide mobile menu
   const handleClick = () => {
     dispatch(hideMobileMenu())
   }
-
+  //select destination
   const selectDestination = (destination) => {
     dispatch(destinationPick(destination));
   }
-
+  //select crew
   const selectCrew = (crew) => {
     dispatch(crewPick(crew));
   }
-
+  //select technology
   const selectTechnology = (technology) => {
     dispatch(technologyPick(technology));
   }

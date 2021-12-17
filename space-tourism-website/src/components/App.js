@@ -11,19 +11,16 @@ import './App.scss';
 
 const App = () => {
 
-
   return (
     <BrowserRouter>
-      <div className='body-backround'>
-        <Navbar />
-        <MobileMenu />
-        <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/destination' element={<DestinationPage />} />
-          <Route path='/crew' element={<CrewPage />} />
-          <Route path='/technology' element={<TechnologyPage />} />
-        </Routes>
-      </div >
+      <Navbar />
+      <MobileMenu />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/destination' element={<DestinationPage />} />
+        <Route path='/crew' element={<CrewPage />} />
+        <Route path='/technology' element={<TechnologyPage />} />
+      </Routes>
     </BrowserRouter>
   )
 }

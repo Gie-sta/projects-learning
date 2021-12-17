@@ -18,7 +18,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-
       
       .describtion{
         .header {
@@ -68,8 +67,6 @@
         }
       }
 
-
-
       .nav{
         padding-bottom: 94px;
         padding-top:20px;
@@ -99,38 +96,34 @@
         }
       }
     }
+
     .image{
-    display: flex;
-    align-items: flex-end;
+      display: flex;
+      align-items: flex-end;
       width: 44.444%;
       img{
         max-width: 100%; 
         max-height: 100%;
-      }
+       }
 
       .fade-enter{
         opacity: 0;
-     }
-     .fade-exit{
+       }
+       .fade-exit{
         opacity: 1;
-     }
-     .fade-enter-active{
-        opacity: 1;
-        
-     }
-     .fade-exit-active{
+      }
+       .fade-enter-active{
+        opacity: 1;    
+      }
+       .fade-exit-active{
         opacity: 0;
-     }
-     .fade-enter-active,
-     .fade-exit-active{
-        transition: opacity 2500ms;
-     }
+      }
+      .fade-enter-active,
+      .fade-exit-active{
+         transition: opacity 2500ms;
+      }
     }
-   
-
   }
-
-
 }
 
 //dekstop small
@@ -141,9 +134,7 @@
         padding-left: 100px;
       }
     }
-  }
-  
-  
+  } 
 }
 
 //tablet big
@@ -153,7 +144,7 @@
     height: auto;
     min-height: 100vh;
     .container{
-    padding-top:0;
+      padding-top:0;
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
@@ -164,7 +155,6 @@
         height:492px;
         display: block;
   
-        
         .describtion{         
           text-align: center;
           .header {
@@ -183,7 +173,6 @@
             margin-bottom: 8px;
             font-size: 24px;
             line-height: 28px;
-      
           }
           .name{
             margin-bottom: 16px;
@@ -192,10 +181,10 @@
           }
           .text{
             height: 84px;
-    margin:0 auto;
-    font-size: 16px;
-    line-height: 28px;
-    text-align: center;
+            margin:0 auto;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
           }
           .width_douglas{
             width: 100%;
@@ -217,8 +206,7 @@
          padding-top:40px;
           width: 88px;
           margin: 0 auto;
-        
-    
+  
           li{
             width: 10px;
             height: 10px;   
@@ -227,11 +215,9 @@
       }
 
       .image{
-      
-      justify-content: center;
-      align-items: flex-end;
+        justify-content: center;
+        align-items: flex-end;
         width: 100%;
-      
         img{      
           height: 532px;
         }
@@ -258,7 +244,6 @@
         display: flex;
         flex-direction: column-reverse;
   
-        
         .describtion{
           .header {
             position: relative;
@@ -269,16 +254,13 @@
             line-height: 19px;
             letter-spacing: 2.7px;
             padding-top:0;
-           
           }
           .role{
             margin-top: 0px;
             font-size: 16px;
             line-height: 18px;
-      
           }
           .name{
-           
             font-size:24px;
             line-height: 28px;
           }
@@ -314,42 +296,35 @@
       }
 
       .image{
-      padding-top:0px;
-     margin:0 auto;
-      justify-content: center;
-      align-items: flex-end;
-      width: 100%;
-      max-width: 327px;
-      height: 223px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);     
-      
-      img{ 
-        margin-top:51px;
-          .fade-enter{
-        opacity: 0;
-     }
-     .fade-exit{
-        opacity: 1;
-     }
-     .fade-enter-active{
-        opacity: 1;
+        padding-top:0px;
+        margin:0 auto;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        max-width: 327px;
+        height: 223px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);     
         
-     }
-     .fade-exit-active{
-        opacity: 0;
-     }
-     .fade-enter-active,
-     .fade-exit-active{
-     
-        transition: opacity 2005ms;
-     }
-         
+        img{ 
+          margin-top:51px;
+          .fade-enter{
+            opacity: 0;
+          }
+          .fade-exit{
+            opacity: 1;
+          }
+         .fade-enter-active{
+           opacity: 1; 
+          }
+          .fade-exit-active{
+            opacity: 0;
+          }
+          .fade-enter-active,
+          .fade-exit-active{
+            transition: opacity 2005ms;
+          }
         }
       }
-     
-  
     }
-
-   
   }
  }

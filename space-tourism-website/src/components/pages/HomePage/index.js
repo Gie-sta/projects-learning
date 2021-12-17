@@ -16,7 +16,6 @@ const HomePage = () => {
 
 
   return (
-
     <section className={styles.background}>
       <header className={styles.header}>
         <h3>so, you want to travel to</h3>
@@ -30,7 +29,6 @@ const HomePage = () => {
         <div className={styles.explore_hover}></div>
       </div>
     </section>
-
   )
 }
 

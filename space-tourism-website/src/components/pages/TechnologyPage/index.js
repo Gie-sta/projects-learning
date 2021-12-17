@@ -2,8 +2,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { useMediaQuery } from 'react-responsive';
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 
-
 import { technologyPick } from '../../../store/actions';
+
 import data from '../../../helpers/data';
 import imageLaunchVehiclePortrait from '../../../assets/technology/image-launch-vehicle-portrait.jpg';
 import imageSpaceportPortrait from '../../../assets/technology/image-spaceport-portrait.jpg';
@@ -20,7 +20,7 @@ const TechnologyPage = () => {
   const technologyState = useSelector((state) => state.technologyReducer.technology);
 
   const dispatch = useDispatch();
-
+  //elect technology
   const selectTechnology = (technology) => {
     dispatch(technologyPick(technology));
   }
@@ -33,7 +33,6 @@ const TechnologyPage = () => {
       return styles.li_active;
     }
   }
-
   const showActiiveSpaceport = () => {
     if (technology.name === "Spaceport") {
       return styles.li_active;
@@ -45,6 +44,7 @@ const TechnologyPage = () => {
     }
   }
 
+  //responsive
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1024.1px)' })
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1024px)' })
 
@@ -68,8 +68,6 @@ const TechnologyPage = () => {
       return imageSpaceCapsuleLandscape;
     }
   }
-
-
 
   return (
     <section className={styles.bacground}>
@@ -98,8 +96,6 @@ const TechnologyPage = () => {
               3
             </li>
           </ul>
-          {/* <div className='technology-card-container'> */}
-
           <SwitchTransition mode="out-in">
             <CSSTransition
               key={technology.name}
@@ -116,7 +112,6 @@ const TechnologyPage = () => {
                 <h5 className={styles.technology_name}>{technology.name}</h5>
                 <p className={styles.text}>{technology.description}</p>
               </div>
-
             </CSSTransition>
           </SwitchTransition>
           <SwitchTransition mode="out-in">
@@ -132,12 +127,9 @@ const TechnologyPage = () => {
               }}
             >
               <img src={showImagePortrait(technology)} alt={technology.name} className={styles.img_portrait} />
-
             </CSSTransition>
           </SwitchTransition>
-          {/* </div> */}
         </div>}
-
       {isTabletOrMobile &&
         <div className={styles.container}>
           <SwitchTransition mode="out-in">
@@ -152,7 +144,6 @@ const TechnologyPage = () => {
                 exitActive: styles['fade-enterexit-active'],
               }}
             >
-
               <img src={showImageLandscape(technology)} alt={technology.name} className={styles.img_landscape} />
             </CSSTransition>
           </SwitchTransition>
