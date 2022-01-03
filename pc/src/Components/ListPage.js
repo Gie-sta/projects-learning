@@ -1,37 +1,68 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useLocation, Link } from 'react-router-dom';
+import jsonPlaceholder from '../apis/jsonPlaceholder';
 
-import './ListPage.scss'
+import Posts from './Posts/Posts';
+import Pagination from './Pagination/Pagination';
+
+import './ListPage.scss';
 
 
-const ListPage = ({ posts }) => {
-  // console.log(posts);
+
+const ListPage = () => {
+
+  const location = useLocation();
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(location.state ? location.state.page : 1);
+  const postsPerPage = 10;
+  // const page = location.state.page;
+  const [page, setPage] = useState(location.state ? location.state.page : currentPage)
+  console.log(currentPage);
+  // 
+  //get posts from api
+  useEffect(() => {
+    const fetchData = async () => {
+      setLoading(true);
+      const fetchedPosts = await jsonPlaceholder.get('/posts');
+      setPosts(fetchedPosts.data);
+      setLoading(false);
+    };
+    fetchData();
+  }, [])
+  // console.log(posts.length)
+
+  //set current posts for pagination
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    setPage(pageNumber);
+    // Window.history.replaceState(null, '');
+  }
+
+
+  //set current page
 
   return (
     <div className='list-container'>
       <h1>All posts</h1>
       <Link className='btn btn-success' to='/create'>Create new post</Link>
-      <div className="row post-container title">
-        <div className='col-1 post-id'>Post ID</div>
-        <h5 className='col-8 post-title'>Post title</h5>
-        <p className='col-1 post-user-id'>User Id</p>
-        <div className='col-2 '>Read more</div>
-      </div>
-      {posts &&
-        posts.map(post => (
-          <div key={post.id}
-            className='row post-container'>
-            <div className='col-1 post-id'>{post.id}</div>
-            <h5 className='col-8 post-title'>{post.title}</h5>
-            <p className='col-1 post-user-id'>user: {post.userId}</p>
-            <Link
-              className='col-2 link-success'
-              to={`/post/${ post.id }`}
-              state={{ id: post.id, userID: post.userId }} >
-              Article details
-            </Link>
-          </div>
-        ))}
+
+      <Posts
+        posts={currentPosts}
+        loading={loading}
+        currentPage={currentPage}
+      />
+      <Pagination
+        postsPerPage={postsPerPage}
+        totalPosts={posts.length}
+        paginate={paginate}
+      />
+
+
     </div >
   )
 }

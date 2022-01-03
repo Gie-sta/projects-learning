@@ -9,6 +9,9 @@ const PostPage = () => {
   const location = useLocation();
   const id = location.state.id;
   const userID = location.state.userID;
+  const page = location.state.page;
+
+  // console.log(page);
 
   const [post, setPost] = useState('');
   const [user, setUser] = useState('');
@@ -52,7 +55,9 @@ const PostPage = () => {
         <div className="card-body">
           <h3 className="card-title">{post.title}</h3>
           <p className="card-text">{post.body}</p>
-          <Link to='/' className="btn btn-success ">Go to all post</Link>
+          <Link to='/'
+            state={{ page }}
+            className="btn btn-success ">Go to all post</Link>
         </div>
       </div>
     </div>
